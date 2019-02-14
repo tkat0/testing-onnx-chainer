@@ -4,7 +4,6 @@ import chainer
 from chainer import links as L
 from chainer import functions as F
 import onnx_chainer
-# import onnx_chainer.export
 from export import export
 
 class Model(chainer.Chain):
