@@ -1,0 +1,9 @@
+version: "3"
+services:
+  dev:
+    build:
+      context: ./docker
+    tty: true
+    working_dir: /work
+    volumes:
+      - $PWD:/work
