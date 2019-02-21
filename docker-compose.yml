@@ -7,3 +7,11 @@ services:
     working_dir: /work
     volumes:
       - $PWD:/work
+  fixed:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile.fixed
+    tty: true
+    working_dir: /work
+    volumes:
+      - $PWD:/work
